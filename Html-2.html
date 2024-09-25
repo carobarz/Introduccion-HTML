@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría HTML</title>
+</head>
+<body>
+    <h1 align="center">Diapositiva n°2 HTML</h1>
+<h2>Anidamiento</h2>
+Etiqueta dentro de otra etiqueta.
+<br>
+Ejemplo:
+<p>Mi gato es  <strong>muy</strong>  viejo</p>
+<!-- dejar 2 espacios antes y después de resaltar, si no queda todo junto -->
+<h2>Formateo de letra</h2>
+- Negrita: <strong>Negrita</strong>
+<br>
+- Italica: <i>Italica</i> o <em>Italica</em>
+<br>
+- Subrayado: <u>Subrayado</u>
+<br>
+- Texto marcado:   <mark>Txt marcado</mark>
+<br>
+- Texto más pequeño: <small>Txt + pequeño</small>
+<br>
+- Texto eliminado: <del>Txt eliminado</del>
+<br>
+- Texto insertado: <ins>Txt insertado</ins>
+<br>
+- Texto subíndice: <sub>Txt subíndice</sub>
+<br>
+- Texto en superíndice: <sup>Txt superíndice</sup>
+<br>
+<h2>Párrafos</h2>
+   <mark>Elemento <strong>pre</strong></mark> <pre>Define un texto preformateado.
+     El texto dentro de esta etiqueta se muestra en una fuente de ancho fijo y conserva los espacios como los saltos.</pre><br>
+     <mark>Alinear párrafo</mark>
+Hay que especificar dentro de la etiqueta párrafo, el atributo  <strong>align</strong>, esto se debe hacer mediante css, que define los estilos y formas.
+<br>
+Ejemplo:
+<p align="left">texto alineado a la izquierda</p>
+<p align="center">texto alineado en el centro</p>
+<p align="right">texto alineado a la derecha</p>
+
+
+<h2>HTML media</h2>
+Los archivos multimedia tienen formatos y diferentes extensiones como :.wav, .mp3, .mp4, .mpg, .wmv y .avi. <br>
+<br>
+<mark> Video: </Mark> Esta etiqueta se utiliza para mostrar un video<br>
+Ejemplo
+<br>
+<br>
+  <video align=center width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="movie/mp4">
+    </video>
+<br>
+<br>
+     <u>Atributos:</u> <br>
+     - Source> texto: permite especificar archivos alternativos que el navegador puede elegir; el nav utilizará el primer formato reconocido. <br>
+     - Width> número: ancho del video.<br>
+     - Height> número: alto del video.<br>
+     - Controls> agregar controles de video. si se establece en true, el video tendrá controles de reproducción y pausa.<br>
+     - Autoplay> si se establece en true, el video se reproducirá automáticamente al cargar la página.<br>
+     - Loop> si se establece en true, el video volverá al principio al terminar.<br>
+     - Poster> texto: especifica una imagen que se mostrará antes de que el video comience a reproducirse.<br>
+     - Muted> si se establece en true, el audio del video se silenciará al cargar la página.<br>
+     <br>
+<mark> Audio:</mark> La etiqueta se usa para mostrar un audio. <br>
+Ejemplo
+<br>
+<br>
+   <audio controls>
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.ogg" type="audio/mp3">
+    </audio>
+<br>
+     <u>Atributos:</u>
+     - Source> texto: permite especificar archivos alternativos que el navegador puede elegir; el nav utilizará el primer formato reconocido. <br>
+     - Controls> agregar controles de audio. si se establece en true, el audio tendrá controles de reproducción y pausa.<br>
+     - Autoplay> si se establece en true, el audio se reproducirá automáticamente al cargar la página.<br>
+     - Loop> si se establece en true, el audio volverá al principio al terminar.<br>
+     - Muted> si se establece en true, el audio se silenciará al cargar la página.<br>
+     <br>
+     <h2>Sintáxis de un elemento</h2>
+     <u>Valores(values):</u> siempre encerrados entre comillas, y seguidos de un signo igual, especifican las configuraciones establecidas por el atributo dle elemento HTML.<br>
+     <a href="http://127.0.0.1:5500/Html-2.html"> visitanos </a><br>
+     <u>Atributos(attributes):</u> son parámetros adicionales en los elementos HTML, que modifican su funcionamiento y presentación de multiples maneras.<br>
+        - src en <strong>img</strong> para especificar la URL de una imagen.<br>
+        - alt en <strong>img</strong> para proporcionar texto alternativo en caso de que la imagen no se pueda mostrar.<br>
+        - class para asignar una o más clases a un elemento, lo que es útil para aplicar estilos CSS.<br>
+        - id para asignar un identificador único a un elemento, útil tanto para estilos como para manipulación con JavaScript.<br>
+        - style para aplicar estilos CSS directamente a un elemento.<br>
+<div><h3>Elementos en línea vs. Elementos en bloque</h3>
+<mark>Elementos en bloque:</mark> Estos elementos generalmente comienzan en una nueva línea y ocupan todo el ancho disponible. Forman un "bloque" visible en la página.<br>
+Ejemplos: <strong>div</strong>(es un elemento en bloque que agrupa todo el contenido de la sección del artículo), <strong>p</strong>(son elementos en bloque para párrafos, cada uno ocupando su propia línea en la disposición.), <strong>h1</strong>(es un elemento en bloque que sirve como el título principal del artículo y comienza en una nueva línea.), y <strong>form</strong>.<br> Son 
+útiles para estructurar el layout y agrupar otros elementos.
+<br>
+<mark>Elementos en línea:</mark> Estos elementos no comienzan en una nueva línea y solo ocupan tanto ancho como su contenido lo requiera.<br>
+Ejemplos: <strong>span</strong>, <strong>a</strong>( es un elemento en línea que se utiliza dentro de un párrafo para crear un enlace sin empezar en una nueva línea.), <strong>img</strong>, y <strong>b</strong>. <br> Son adecuados para usar dentro de los elementos en bloque cuando quieres manipular solo una parte del texto o insertar pequeños componentes como imágenes.<br>
+<blockquote>Cada tipo de elemento tiene su propósito específico en la estructura y presentación 
+    del contenido web, y entender sus diferencias es clave para un diseño web efectivo.</blockquote> </div>
+<code><div>
+    <h1 align="center">El Cambio Climático</h1>
+    <p>
+    El cambio climático se refiere a un cambio significativo en las
+    medidas del clima que dura por un período
+    extendido de tiempo.
+    </p>
+    <a href="https://www.ejemplo-ambiente.org">
+    nuestro sitio de medio ambiente
+    </a>
+    <a href="https://www.ejemplo2-ambiente.org">otro link</a>
+    </div</code>
+<hr>
+<blockquote>El término <strong>"layout"</strong> se refiere a la disposición y estructura de elementos dentro de una página web. Es la forma en que se organizan los contenidos, imágenes, formularios y otros elementos en el navegador. Un buen layout debe ser estéticamente agradable y funcional, guiando al usuario de manera intuitiva a través del flujo de información y acciones disponibles en el sitio. En el desarrollo web, trabajar en el layout implica tomar decisiones sobre la disposición de los bloques de contenido, la alineación, el espaciado, y cómo estos se adaptarán o responderán a diferentes tamaños de pantalla y dispositivos.</blockquote>
+<hr>
+<h2>Listas</h2>
+<mark>Listas ordenadas:</mark>utilizan la etiqueta <strong>ol</strong> y presentan elementos en una secuencia numérica o alfabética. Cada elemento de la lista se marca con la etiqueta <strong>li</strong>. Son útiles cuando el orden de los ítems es importante, como en recetas o instrucciones.
+ <code></code><ol>
+ <li>Preparar los ingredientes.</li>
+ <li>Mezclar los ingredientes secos.</li>
+ </ol></code>
+ <mark>Listas desordenadas:</mark>se crean con la etiqueta <strong>ul</strong> y los elementos de la
+ lista no tienen un orden específico. Esta es la lista que usarías para cosas como listas de compras o características.
+ <code><ul>
+ <li>Leche</li>
+ <li>Huevos</li>
+ <li>Harina</li>
+ </ul></code>
+<mark>Listas de definición:</mark>aunque no son tan comúnmente utilizadas, se emplean para presentar un término y su definición correspondiente. Se crean con la etiqueta <strong>d1</strong> y dentro se colocan pares de términos <strong>(dt)</strong> y
+ definiciones <strong>(dd)</strong>.
+ <code><dl>
+ <dt>HTML</dt>
+ <dd>Lenguaje de marcado utilizado para crear estructuras en la web.</dd>
+ <dt>CSS</dt>
+ <dd>
+ Lenguaje de estilos utilizado para diseñar y personalizar la
+ apariencia de documentos HTML.
+ </dd>
+ </dl></code> 
+ <h2>Tablas</h2>
+ Son una forma de organizar datos en filas y columnas. Son muy útiles para presentar información de manera estructurada y fácil de leer.<br>
+ <mark>Estructura básica</mark>
+ <code><ul>
+    <li><strong>table</strong>: define una tabla</li>
+    <li><strong>tr</strong>: define una fila de la table</li>
+    <li><strong>th</strong>: define una selda de encabezado(normalmente en negrita)</li>
+    <li><strong>td</strong>: define una celda de datos regular</li>
+    <li><strong>thead</strong>: define el encabezado de la table</li>
+    <li><strong>tbody</strong>: define el cuerpo de la table</li>
+    <li><strong>tfoot</strong>: define el pie de la tabla</li>
+    <li>colspan: permite que una celda se extienda a través de múltiples columnas</li>
+    <li>rowspan: permite que una celda se extienda a través de múltiples filas</li>
+ </ul></code><br>
+ ejemplo: <br>
+ <code><table>
+    <thead>
+    <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+    <th>Ciudad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Juan</td>
+    <td>25</td>
+    <td>Córdoba</td>
+    </tr>
+    <tr>
+    <td>Pedro</td>
+    <td>30</td>
+    <td>Buenos Aires</td>
+    </tr>
+    <tr>
+    <td>María</td>
+    <td>32</td>
+    <td>San Luis</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td colspan="3">Pie de la tabla</td>
+    </tr>
+    </tfoot>
+    </table></code>
+<h2>Formularios</h2>
+
+
+     
+</body>
+</html>
